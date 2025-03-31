@@ -1,13 +1,13 @@
 import pygame
 
-# Initialize Pygame
+
 pygame.init()
 
-# Set up the screen
+# Setting up the screen
 screen = pygame.display.set_mode((400, 300))
 pygame.display.set_caption("Pac-Man")
 
-# Player starting position and speed
+# Player started position and speed
 x, y, speed = 200, 150, 3  #  speed for smoother movement
 
 # Create a clock object to control the frame rate
@@ -29,7 +29,7 @@ while True:
     x = max(15, min(x, 385))  # Prevents going off-screen horizontally
     y = max(15, min(y, 285))  # Prevents going off-screen vertically
 
-    # Clear the screen
+   
     screen.fill((0, 0, 0))
 
     # Draw the player (yellow circle)
